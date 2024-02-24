@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* variables */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  user-select: none;
+}
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-feature-settings: normal;
+}
+
+body {
+  background: linear-gradient(to top right,#111,#001c15);
+  height: 100%;
+}
+
+
+body:before {
+  content: "";
+  background-image: url(../images/grid.svg);
+  background-repeat: repeat;
+  position: fixed;
+  inset: 0;
+  opacity: .2;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.nav_btn {
+  border: none;
+  background-color: #1e1d1de1;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgba(240, 248, 255, 0.59);
+}
+
+.nav_btn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  background-color: #2e2d2d;
+}
+
+.logo_ {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f0f8ff;
+  text-decoration: none;
+  width: 100%;
+}
+
+.logo_ > a {
+  color: #f0f8ff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+.logo_ .logo__text {
+  background: rgb(47, 44, 44);
+  padding: 2px;
+  color: black;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding-left: 50px;
+  padding-right: 6px;
+  color: #f0f8ff;
+}
+
+.home_title_ {
+  color: #f0f8ff;
+  font-size: 1.7rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+.home_title_ > span {
+  color: lightgreen;
+}
+
+.what_do {
+  color: #f0f8ff;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+.desc_ {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  color: #707171;
+  font-size: 20px;
+  max-width: 60%;
+}
+
+
+.empty_line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  background-color: #3536366a;
+  height: 1px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.titles {
+  color: #4b4e4e;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.links__ {
+  background-color: #1f1f1f;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+
+.links__ > .link_ {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+}
+.box_links .links__ > a {
+  text-decoration: none;
+  color: #f0f8ff;
+}
+.box_links .links__ > a > h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.box_links {
+  margin-top: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap: 20px;
+}
+
+.box_links .links__ > a > p {
+  margin-top: 25px;
+  padding: 0;
+  margin: 0;
+  color: #a1a2a3;
+}
+
+.titles_small {
+  color: #4b4e4e;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.data_techno {
+  margin-top: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  gap: 10px;
+}
+.techno_card img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.techno_card {
+  background-color: #1f1f1f;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  gap: 20px;
+}
+
+.techno_card > p {
+  font-size: 15px;
+  font-weight: 400;
+  font-weight: 400;
+  color: #888888;
+}
+
+.mee_img {
+  object-fit: cover;
+  width: 300px;
+  height : 300px;
+  max-width: 400px;
+  max-height: 400px;
+  display: block;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.graphic_projects {
+  margin-top: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap: 20px;
+}
+.web_projects {
+  margin-top: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  gap: 20px;
+}
+
+.project_card {
+  text-decoration: none;
+}
+.project_card > img {
+  width: 500px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.web_projects > .project_card > img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.project_card > h3 {
+  color: #f0f8ff;
+  font-size: 1.4rem;
+  margin-top: 15px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.project_card > p {
+  color: #a1a2a3;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  margin-top: 20;
+  font-weight: 300;
+}
+
+.input_  {
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1f1f1f;
+  outline: none;
+  color: white;
+  width: 90%;
+}
+
+.message_input {
+  height: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1f1f1f;
+  outline: none;
+  color: white;
+  resize: none;
+  width: 90%;
+}
+
+.btn_ {
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1f1f1f;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+@media only screen and (max-width: 900px) {
+  .data_techno {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .desc_ {
+    max-width: 100%;
+  }
+  .mee_img {
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+    max-height: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .box_links {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .web_projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .web_projects > .project_card > img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .message_input  {
+    width: 100%;
+  }
+  .input_  {
+    width: 100%;
+  }
+
+  .btn_ {
+    width: 100%;
+  }
+}
