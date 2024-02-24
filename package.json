@@ -2,7 +2,7 @@
   "name": "amine-amazzal-portofolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AMAZZAL-AMINE.github.io",
+  "homepage": "https://amineamazzal.me",
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
